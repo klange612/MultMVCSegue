@@ -1,5 +1,5 @@
 //
-//  MultiMVCSegueViewController.h
+//  WillVC.h
 //  MultMVCSegue
 //
 //  Created by Kelley Lange on 4/13/13.
@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ConnorVC.h"
+#import <AudioToolbox/AudioToolbox.h>
 
-@interface MultiMVCSegueViewController : UIViewController
+@interface WillVC : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *greetingLabel;
 
 @end

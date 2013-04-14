@@ -18,6 +18,12 @@
 		5330764A17198EBC0071902D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5330764917198EBC0071902D /* Default-568h@2x.png */; };
 		5330764D17198EBC0071902D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5330764B17198EBC0071902D /* MainStoryboard.storyboard */; };
 		5330765017198EBC0071902D /* MultiMVCSegueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5330764F17198EBC0071902D /* MultiMVCSegueViewController.m */; };
+		5330765D171996D60071902D /* WillVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5330765C171996D60071902D /* WillVC.m */; };
+		533076601719AAD60071902D /* ConnorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5330765F1719AAD60071902D /* ConnorVC.m */; };
+		533076621719BE920071902D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533076611719BE920071902D /* AVFoundation.framework */; };
+		533076641719C0940071902D /* Tink.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 533076631719C0940071902D /* Tink.aiff */; };
+		533076661719C1960071902D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533076651719C1960071902D /* AudioToolbox.framework */; };
+		533076691719C37E0071902D /* TypewriterMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 533076681719C37E0071902D /* TypewriterMessage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,15 @@
 		5330764C17198EBC0071902D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		5330764E17198EBC0071902D /* MultiMVCSegueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiMVCSegueViewController.h; sourceTree = "<group>"; };
 		5330764F17198EBC0071902D /* MultiMVCSegueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiMVCSegueViewController.m; sourceTree = "<group>"; };
+		5330765B171996D60071902D /* WillVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WillVC.h; path = ../WillVC.h; sourceTree = "<group>"; };
+		5330765C171996D60071902D /* WillVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WillVC.m; path = ../WillVC.m; sourceTree = "<group>"; };
+		5330765E1719AAD60071902D /* ConnorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnorVC.h; sourceTree = "<group>"; };
+		5330765F1719AAD60071902D /* ConnorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnorVC.m; sourceTree = "<group>"; };
+		533076611719BE920071902D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		533076631719C0940071902D /* Tink.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Tink.aiff; sourceTree = "<group>"; };
+		533076651719C1960071902D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		533076671719C37E0071902D /* TypewriterMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypewriterMessage.h; sourceTree = "<group>"; };
+		533076681719C37E0071902D /* TypewriterMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypewriterMessage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				533076661719C1960071902D /* AudioToolbox.framework in Frameworks */,
+				533076621719BE920071902D /* AVFoundation.framework in Frameworks */,
 				5330763417198EBB0071902D /* UIKit.framework in Frameworks */,
 				5330763617198EBB0071902D /* Foundation.framework in Frameworks */,
 				5330763817198EBB0071902D /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +90,8 @@
 		5330763217198EBB0071902D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				533076651719C1960071902D /* AudioToolbox.framework */,
+				533076611719BE920071902D /* AVFoundation.framework */,
 				5330763317198EBB0071902D /* UIKit.framework */,
 				5330763517198EBB0071902D /* Foundation.framework */,
 				5330763717198EBB0071902D /* CoreGraphics.framework */,
@@ -83,11 +102,17 @@
 		5330763917198EBB0071902D /* MultMVCSegue */ = {
 			isa = PBXGroup;
 			children = (
+				5330765E1719AAD60071902D /* ConnorVC.h */,
+				5330765F1719AAD60071902D /* ConnorVC.m */,
+				5330765B171996D60071902D /* WillVC.h */,
+				5330765C171996D60071902D /* WillVC.m */,
 				5330764217198EBC0071902D /* MultiMVCSegueAppDelegate.h */,
 				5330764317198EBC0071902D /* MultiMVCSegueAppDelegate.m */,
 				5330764B17198EBC0071902D /* MainStoryboard.storyboard */,
 				5330764E17198EBC0071902D /* MultiMVCSegueViewController.h */,
 				5330764F17198EBC0071902D /* MultiMVCSegueViewController.m */,
+				533076671719C37E0071902D /* TypewriterMessage.h */,
+				533076681719C37E0071902D /* TypewriterMessage.m */,
 				5330763A17198EBB0071902D /* Supporting Files */,
 			);
 			path = MultMVCSegue;
@@ -96,6 +121,7 @@
 		5330763A17198EBB0071902D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				533076631719C0940071902D /* Tink.aiff */,
 				5330763B17198EBB0071902D /* MultMVCSegue-Info.plist */,
 				5330763C17198EBB0071902D /* InfoPlist.strings */,
 				5330763F17198EBB0071902D /* main.m */,
@@ -164,6 +190,7 @@
 				5330764817198EBC0071902D /* Default@2x.png in Resources */,
 				5330764A17198EBC0071902D /* Default-568h@2x.png in Resources */,
 				5330764D17198EBC0071902D /* MainStoryboard.storyboard in Resources */,
+				533076641719C0940071902D /* Tink.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +204,9 @@
 				5330764017198EBB0071902D /* main.m in Sources */,
 				5330764417198EBC0071902D /* MultiMVCSegueAppDelegate.m in Sources */,
 				5330765017198EBC0071902D /* MultiMVCSegueViewController.m in Sources */,
+				5330765D171996D60071902D /* WillVC.m in Sources */,
+				533076601719AAD60071902D /* ConnorVC.m in Sources */,
+				533076691719C37E0071902D /* TypewriterMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

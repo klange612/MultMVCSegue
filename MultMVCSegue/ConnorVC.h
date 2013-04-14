@@ -1,5 +1,5 @@
 //
-//  MultiMVCSegueViewController.h
+//  ConnorVC.h
 //  MultMVCSegue
 //
 //  Created by Kelley Lange on 4/13/13.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ConnorVC.h"
 
-@interface MultiMVCSegueViewController : UIViewController
+@interface ConnorVC : UIViewController
 
 @end
