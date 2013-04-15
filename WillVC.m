@@ -7,6 +7,7 @@
 //
 
 #import "WillVC.h"
+#import "FliteTTS.h"
 
 #define DebugMode   @"TRUE"
 
@@ -19,6 +20,7 @@
 @implementation WillVC
 NSTimer *timer;
 SystemSoundID soundID;
+FliteTTS *fliteEngine;
 
 @synthesize greeting = _greeting;
 @synthesize charIndex;
@@ -30,6 +32,12 @@ SystemSoundID soundID;
     charIndex = 0;
     [timer invalidate];
     timer = nil;
+    
+    fliteEngine = [[FliteTTS alloc]init];
+    [fliteEngine setPitch:100.0 variance:50.0 speed:1.0];	// Change the voice properties
+	[fliteEngine setVoice:@"cmu_us_rms"];	// Switch to a different voice
+    [fliteEngine speakText:@"Will you found me."];
+    
     NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"Tink" ofType:@"aiff"];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &soundID);
     

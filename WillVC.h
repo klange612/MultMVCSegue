@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
+
+
+@class FliteTTS;
 
 @interface WillVC : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *greetingLabel;
 
 @end
+
